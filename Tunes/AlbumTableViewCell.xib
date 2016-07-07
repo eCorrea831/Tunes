@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="80" id="KGk-i7-Jjw" customClass="AlbumTableViewCell" customModule="Tunes" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="89"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="88"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="bhM-BE-Goz">
+                        <rect key="frame" x="14" y="12" width="63" height="63"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="generic_album" translatesAutoresizingMaskIntoConstraints="NO" id="QV5-qo-vVa">
+                                <rect key="frame" x="0.0" y="0.0" width="63" height="63"/>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="63" id="Ofp-7G-A4L"/>
+                            <constraint firstAttribute="height" constant="63" id="PuQ-0v-qPA"/>
+                        </constraints>
+                    </stackView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="clip" baselineAdjustment="alignBaselines" minimumScaleFactor="0.10000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="fR6-6g-BfY">
+                        <rect key="frame" x="88" y="12" width="52" height="24"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="mI6-WJ-FXy">
+                        <rect key="frame" x="88" y="39" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.53250051030000001" green="1" blue="0.7832553901" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="clip" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="agb-ag-KWd">
+                        <rect key="frame" x="148" y="12" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.53250051030000001" green="1" blue="0.7832553901" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" red="0.29516563252039812" green="0.55826652486910988" blue="0.43921476684127264" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstItem="fR6-6g-BfY" firstAttribute="leading" secondItem="QV5-qo-vVa" secondAttribute="trailing" constant="11" id="9Va-Zk-Xgm"/>
+                    <constraint firstItem="mI6-WJ-FXy" firstAttribute="leading" secondItem="fR6-6g-BfY" secondAttribute="leading" id="BgA-Sl-3EX"/>
+                    <constraint firstItem="agb-ag-KWd" firstAttribute="top" secondItem="fR6-6g-BfY" secondAttribute="top" id="EVf-Pr-8Th"/>
+                    <constraint firstItem="bhM-BE-Goz" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="6" id="MEg-RS-U8Z"/>
+                    <constraint firstItem="fR6-6g-BfY" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="4" id="erm-Nd-INz"/>
+                    <constraint firstItem="agb-ag-KWd" firstAttribute="leading" secondItem="fR6-6g-BfY" secondAttribute="trailing" constant="8" id="f0x-kW-Hx3"/>
+                    <constraint firstItem="QV5-qo-vVa" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="4" id="gHD-Jd-mqs"/>
+                    <constraint firstItem="mI6-WJ-FXy" firstAttribute="top" secondItem="fR6-6g-BfY" secondAttribute="bottom" constant="3" id="sVv-Ka-QCd"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="albumArtistLabel" destination="mI6-WJ-FXy" id="Koi-xA-zKl"/>
+                <outlet property="albumCoverImage" destination="QV5-qo-vVa" id="neG-a7-Pt6"/>
+                <outlet property="albumPriceLabel" destination="agb-ag-KWd" id="UFF-HB-Pzg"/>
+                <outlet property="albumTitleLabel" destination="fR6-6g-BfY" id="YFT-U5-Rz8"/>
+            </connections>
+            <point key="canvasLocation" x="220" y="335.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="generic_album" width="60" height="60"/>
+    </resources>
+</document>
